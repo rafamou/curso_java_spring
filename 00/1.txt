@@ -1,0 +1,114 @@
+
+package pkg01_ejemplojava;
+public class Main {
+
+    public static void main(String[] args) {
+       boolean condicion = 5 ==5 && true;
+       if (3>5){
+           if (condicion || false){
+           System.out.println("Es verdadero"); 
+       }
+    } else if (5<7){
+        System.out.println("No se ejecuta");
+    }else if (8>9) {
+        System.out.println("No se ejecuta");
+    } else {
+        System.out.println("Cualquier otra cosa ");
+    }
+       char letra = 'B';
+       switch (letra) {
+           case 'A':
+               System.out.println("Aaaaaaa ");
+               break ;
+               case 'B':
+               System.out.println("BBbbbbbbbbb ");
+               break ;
+               case 'C':
+               System.out.println("Cccccccccc ");
+               break ;      
+       }
+     String formateado = nombreApell ( " fayez moustafa" , " Ragab"); // empezara despuse del  main class }
+     System.out.println( formateado);
+     
+           Tucan miPajaro = null ;
+           miPajaro =new Tucan ();
+           miPajaro.longitude = 20.5f ;
+           System.out.println("long Tucan:" + miPajaro.longitude);
+         
+           Tucan otroPajaro = null  ;  // null es el defecto 
+           otroPajaro = new Tucan ();
+           otroPajaro.longitude = 30.9f ;
+           System.out.println("mi Tucan:" + miPajaro.longitude);
+           System.out.println("otro Tucan:" + otroPajaro.longitude);
+          System.out.println("otro Tucan:" + otroPajaro);  // guardando la referncia 
+          
+      ////////////////////////////////
+          otroPajaro = miPajaro ;       //  reservar la misma memoria del el antiguo porque antes cada uno tiene su memoria 
+          System.out.println("otro Tucan::" + otroPajaro.longitude);
+      //////// //////////////////
+      
+        miPajaro.longitude = 67.6f ;
+        System.out.println("otro Tucan:" + otroPajaro.longitude);
+           ///// ............................///////////////////
+           otroPajaro.edad = 11 ;
+        System.out.println("edad Tucan:" + otroPajaro.edad);
+        
+                               ///888888888888888888////
+        otroPajaro.piar();      // publi void piar // un metodo de obectos differente
+        miPajaro.piar();
+        
+        Tucan nuevoTuc = new Tucan ();
+        System.out.println("Nuevo Tucan:" + nuevoTuc.longitude);
+                
+    }
+       static  String nombreApell (String nombre , String apellidos){
+          return apellidos +"," + nombre ;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tucan
+
+
+
+
+package pkg01_ejemplojava;
+
+public class Tucan extends Object {
+    String [] colores ;  // caracteristicas 
+    float longitude ;
+    int edad ;
+    
+    public Tucan () {    // eso para el nuevo tuca   nuevoTuc
+    this.edad =0 ;
+    longitude = 5f ;
+    colores  = new String [] {
+    " blanco", "marron"
+    }; 
+    } 
+    
+    
+    
+    public void piar () {
+        System.out.println("pio pio " + edad + "anos");
+        
+    }
+    
+    
+}
