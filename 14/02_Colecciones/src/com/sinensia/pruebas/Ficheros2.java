@@ -11,9 +11,7 @@ package com.sinensia.pruebas;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.OutputStreamWriter;
-import static java.nio.file.Files.write;
 import java.util.Scanner;
 
 /**
