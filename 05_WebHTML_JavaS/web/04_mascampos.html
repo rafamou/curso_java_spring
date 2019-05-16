@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Otros Campos Form </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> Otros Campos Form </h1>
+        
+            <form action= "#"  method= "post" enctype= "text/plan" >
+                <input type="button" value="boton JS" 
+                       onclick="alert('hola que pacha')" />   
+                <input type="button" value="boton JS externo" 
+                       onclick="mostrarMensaje('!hola de nuevo!')" />
+            <br   <label for="fichero">Fichero:</label>
+                <input type="file" id="fichero" name="fichero">
+            <br   <label for="fecha">Fecha:</label>
+                <input type="datatime" id="fecha" name="fecha">
+            <br   <label for="passwd">password:</label>
+                  <input type="password" id="passwd" name="passwd"/>
+            <br/>   <label for="passwd-encriptada">campo no visible</label>
+                  <input type="hidden" id="passwd-encriptada"
+                   name="passwd-encriptada" value="kjkdfhkf"/>
+                  
+                  <br/> Otros Campos <br/>
+                  
+                   <input type="url" id="dirreccion-serv"  name="dirreccion-serv" />
+                   <input type="range" id="rango"  name="rango" min="-50" max="50" step="5" />
+                   <input type="tel" name="telefono" id="telefono" />
+                   <input type="search" name="busqueda" id="busqueda" />
+                   <br/> <input type="submit" name="enviar" id="enviar" value="enviar" />
+                   
+                    <br/> Otros Campos  especiales <br/>
+                    <input type="checkbox" checked="checked"/> checado o no 
+            <br/>Opciones:
+                     <input  type="radio" id="tipoCliente" name="tipoCliente"
+                            value="Cliente normal"/> Cliente normal
+                     <input  type="radio" id="tipoClienteinvitado" name="tipoCliente"
+                            value="Cliente Invitado" checked="checked" /> Cliente Invitado
+                     <input  type="radio" id="tipoClienteVIP" name="tipoCliente"
+                            value="Cliente VIP"/> ClienteVIP
+                     
+             <br/>
+             <!-- Comentario -->
+             Frecuencia de Viajez :
+             <select id="frecuencia" name="frecuencia" multiple="" >
+                 <option value="1" >varias veces al dia </option>
+                 <option value="2"> una vece al semana </option>
+                 <option value="3"> varias veces al semana </option>
+                 <option value="4"> dos veces al dia </option>
+             </select>
+
+             <br/> Comentarios o Mensajes : </br>
+             <textarea id="comentario" cols="30"
+                       rows="6" name="comentarios"
+                       placeholder= "cuenta lo que te apetace"></textarea>                     
+              
+                   
+                   
+            </form> 
+        <table border="2">
+        <caption> Lista de Vanias </caption>
+         <tr>
+              <td> Vaina :</td>
+              <td> Peine </td>
+              <td> 15 euros </td>
+         </tr>
+         <tr>
+              <td> Vaina :</td>
+              <td> Quitapelos para jorge </td>
+              <td> 50 euros </td>
+         </tr>  
+         <tr>
+              <td> Vaina :</td>
+              <td> un coche estropea </td>
+              <td> 200 euros </td>
+         </tr> 
+            
+        </table>
+        <img alt="texto alternativo IMG"
+             src="image/rafamou.jpg"
+             style="width: 100% ; height: 100%"/>
+        
+        <script src="js/04_mascampos.js">
+            
+        </script>
+           
+            
+    </body>
+</html>
