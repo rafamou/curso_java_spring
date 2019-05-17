@@ -1,0 +1,61 @@
+
+*{
+    margin: 10px;
+    padding: 2px;
+}
+/* selector de la etiqueta*/     
+form {
+   /* background-image: url("Tryit Editor v3.6");*/
+   background-color: lightblue;
+   /* background-color: #cccccc;
+    background-color: #AAFFAA;*/
+    padding: 10px;
+    display: block ;
+}
+.margin_lateral{
+    margin-right: 20%;
+    margin-left: 20% ;
+}
+form div{
+    display: block ;
+}
+form label , form input {
+    display: inline-block ;
+
+}
+label {
+    width: 200px;
+    display: initial;
+}
+#email{
+    font-size: 1.5em;
+#nombre {
+      font-size: 1.5em;  
+    }    
+
+} 
+label {
+    color: red;
+    background: beige;
+}
+
+.centerButtons {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  color: aquamarine;
+}
+
+.margin_nombre{
+    margin-right: 5%;
+    margin-left: 5% ;
+    size: auto;
+}
+.margin_email{
+    margin-right: 5%;
+    margin-left: 5% ;
+}
+.margin_edad{
+    margin-right: 5%;
+    margin-left: 5% ;
+}

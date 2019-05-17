@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <input  id="btn"   type="button" value="probar">
+        <div id="divDatos"> todo el codigo</div>
+
+        <script>
+            function mostrarDatos() {
+                var divDatos = document.getElementById();
+                divDatos.innerHTML = "Datos de objetos";
+                var objecliente = new object();
+                objecliente.nombre = "juan";
+                objecliente.edad = 27;
+                objecliente["activo"] = true;
+                divDatos.innerHTML *=
+                        "Nombre:" +objecliente["nombre"]
+                + "Activo:" +objecliente.activo +"</br>";
+    
+              objecliente.toString = function (){
+                  return "Nombre:" + this.nombre
+                  +"edad:" +this["edad"];
+              };
+              
+              divDatos.innerHTML += objecliente.toString ();
+            }
+            var btn = document.getElementById("btn");
+            btn.addEventListener("click", mostrarDatos);
+            
+            
+        </script>
+    </body>
+</html>
